@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-container {
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #4CAF50;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar {
+    color: #4CAF50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.navbar ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+button {
+    padding: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-container {
+        width: 90%;
+    }
+}
+
+#clock {
+    color: #4CAF50;
+    font-size: 25px;
+}
+
+#moon-phase-clock {
+    padding-right: 80%;
+    display: block;
+}
+  
+#moon-phase-image {
+    height: 150px;
+    width: 150px;
+}
+  
+#moon-phase-name {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 15px;
+}
