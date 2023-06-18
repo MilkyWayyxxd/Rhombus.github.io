@@ -4,7 +4,7 @@ var users = [
     { username: 'user3', password: 'password3' }
   ];
   
-  var loginForm = document.getElementById('loginForm');
+  var loginForm = document.getElementById('login-form');
   loginForm.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent default form submission
   
@@ -15,8 +15,7 @@ var users = [
     for (var i = 0; i < users.length; i++) {
       if (usernameInput === users[i].username && passwordInput === users[i].password) {
         // Successful login
-        messageElement.textContent = 'Login successful!';
-        messageElement.style.color = 'green';
+        
   
         // Delay the redirection to dashboard.html by 2 seconds (2000 milliseconds)
         setTimeout(function() {
